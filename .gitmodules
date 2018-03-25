@@ -1,0 +1,3 @@
+[submodule "cad/DobloFactory"]
+	path = cad/DobloFactory
+	url = https://github.com/smay4finger/DobloFactory
