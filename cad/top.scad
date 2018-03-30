@@ -18,16 +18,16 @@
 
 include <DobloFactory/doblo-factory.scad>
 
+$fs = 2;
+$fa = 1;
+
 difference()
 {
     union()
     {
-        translate([0, 0, 5]) nibbles(-1.5, -2, 0, 3, 4, DOBLO);
-        cylinder(d=80, 5, true, $fa = 1);
+        translate([0, 0, 10]) nibbles(-1.5, -2, 0, 3, 4, DOBLO);
+        translate([0, 0, 5]) cylinder(d=80, 5, true);
+        cylinder(d=70, 5, true);
     }
-    cylinder(d=70, 3, true, $fa = 1);
-    cylinder(d1=24, d2=15, 4.5, true, $fa = 1);
-    translate([35, 2.5, 0]) rotate([90, 0, 0])
-        linear_extrude(5)
-            polygon([ [-1, 0], [-1, 3], [0, 3], [3, 0]]);
+    cylinder(d1=15+9*2, d2=15, 9, true, $fa = 1);
 }
