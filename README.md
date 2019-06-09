@@ -1,6 +1,6 @@
 # DuploSwing
 
-This project is a driving a Duplo Swing with the help of a magnet. You will
+This project drives a Duplo Swing with the help of a magnet. You will
 need the following things:
 
 - Duplo 6514 LegoDuplo Swing Seat
